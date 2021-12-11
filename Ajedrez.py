@@ -9,6 +9,14 @@ fichas_negras = {
     chr(0x265a): "k"  
 }
 
+fichas_blancas = {
+    chr(0x2659): "P",
+    chr(0x2658): "R",
+    chr(0x2657): "N",
+    chr(0x2566): "B",
+    chr(0x2655): "Q",
+    chr(0x2654): "K" 
+}
 
 
 tablero = chess.Board()
