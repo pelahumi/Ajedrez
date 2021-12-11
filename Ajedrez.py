@@ -18,6 +18,11 @@ fichas_blancas = {
     chr(0x2654): "K" 
 }
 
+fichas = {**fichas_negras, **fichas_blancas}
+
+
+for ficha, valor in fichas.items():
+    print("Las fichas {} en el tablero son {}".format(ficha,valor))
 
 tablero = chess.Board()
 print(tablero)
