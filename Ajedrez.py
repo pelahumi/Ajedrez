@@ -30,10 +30,10 @@ print(tablero)
 while tablero.is_checkmate() == False:
     print("Los movimientos posibles son: ", tablero.legal_moves)#Esto mostrará al usuario los posibles movimientos que puede hacer
     move = input("Introduce tu movimiento: ")
-
     tablero.push_san(move)
-    print(tablero)
-    tablero.is_checkmate()
+    
+    print(tablero)#Tablero después del movimiento
+    tablero.is_checkmate()#Comprueba si hay jaque mate y devuelve un valor boleano
     
     if tablero.is_checkmate() == True:
         print("Jaque mate")
