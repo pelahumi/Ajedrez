@@ -4,4 +4,9 @@ Mi dirección de este repositorio es la siguiente: [GitHub](https://github.com/p
 https://github.com/pelahumi/Ajedrez
 
 El diagrama de flujo correspondiente a este código es el siguiente:
+
 ![Diagrama de flujo](https://github.com/pelahumi/Ajedrez/blob/main/Captura%20de%20pantalla%202021-12-12%20a%20las%2019.37.14.png)
+
+El código de la tarea es el siguiente:
+
+'''
