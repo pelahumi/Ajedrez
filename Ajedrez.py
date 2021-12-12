@@ -27,9 +27,9 @@ for ficha, valor in fichas.items():
 tablero = chess.Board()
 print(tablero)
 
-f = open(partida.txt,"w")
-f.write(print(tablero))
-
+f = open("partida.txt","w")
+f.write(str(print(tablero)))
+f.close()
 
 while tablero.is_checkmate() == False:
     respuesta = input("¿Quieres realizar un movimiento?: ")
@@ -41,6 +41,9 @@ while tablero.is_checkmate() == False:
     
         print(tablero)#Tablero después del movimiento
         tablero.is_checkmate()#Comprueba si hay jaque mate y devuelve un valor boleano
+
+        f = open("partida.txt","a")
+
     
     else:
         print("Se ha acabado la partida")
