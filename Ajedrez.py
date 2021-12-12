@@ -38,5 +38,9 @@ while tablero.is_checkmate() == False:
         print(tablero)#Tablero después del movimiento
         tablero.is_checkmate()#Comprueba si hay jaque mate y devuelve un valor boleano
     
+    else:
+        print("Se ha acabado la partida")
+        break
+    
     if tablero.is_checkmate() == True:
         print("Jaque mate")
