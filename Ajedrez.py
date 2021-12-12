@@ -27,6 +27,10 @@ for ficha, valor in fichas.items():
 tablero = chess.Board()
 print(tablero)
 
+f = open(partida.txt,"w")
+f.write(print(tablero))
+
+
 while tablero.is_checkmate() == False:
     respuesta = input("¿Quieres realizar un movimiento?: ")
 
