@@ -28,7 +28,7 @@ tablero = chess.Board()
 print(tablero)
 
 f = open("partida.txt","w")
-f.write(str(print(tablero)))
+f.write(str(tablero) + "\n")
 f.close()
 
 while tablero.is_checkmate() == False:
@@ -43,12 +43,9 @@ while tablero.is_checkmate() == False:
         tablero.is_checkmate()#Comprueba si hay jaque mate y devuelve un valor boleano
 
         f = open("partida.txt","a")
-        f.write("Movimiento: " + move)
-        f.write(str(print(tablero)))
-
-
-
-    
+        f.write("Movimiento: " + move + "\n")
+        f.write(str(tablero) + "\n")
+ 
     else:
         print("Se ha acabado la partida")
         break
